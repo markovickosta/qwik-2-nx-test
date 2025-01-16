@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
-// import { join } from 'path';
+import { join } from 'path';
+import { partytownVite } from '@qwik.dev/partytown/utils';
 import { qwikNxVite } from 'qwik-nx/plugins';
 import { qwikRouter } from '@qwik.dev/router/vite';
 import { qwikSpeakInline } from 'qwik-speak/inline';
@@ -27,9 +28,9 @@ export default defineConfig({
       supportedLangs: ['sr', 'en'],
       defaultLang: 'sr',
     }),
-    // partytownVite({
-    //   dest: join(__dirname, '../../dist/apps/testing-app/dist', '~partytown'),
-    // }),
+    partytownVite({
+      dest: join(__dirname, '../../dist/apps/testing-app/dist', '~partytown'),
+    }),
   ],
   server: {
     fs: {

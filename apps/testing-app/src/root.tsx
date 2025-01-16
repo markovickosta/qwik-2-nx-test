@@ -6,6 +6,7 @@ import {
 	ServiceWorkerRegister,
 } from '@qwik.dev/router';
 
+import { QwikPartytown } from './partytown';
 import { RouterHead } from './components/router-head/router-head';
 import { component$ } from '@qwik.dev/core';
 import { config } from './integrations/qwik-speak/speak-config';
@@ -32,6 +33,7 @@ export default component$(() => {
 						href={`${import.meta.env.BASE_URL}manifest.json`}
 					/>
 				)}
+				<QwikPartytown forward={['dataLayer.push']} />
 				<RouterHead />
 			</head>
 			<body lang="en">
