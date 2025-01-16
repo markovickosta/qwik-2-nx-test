@@ -5,7 +5,8 @@
 	"type": "module",
 	"scripts": {
 		"start": "nx run testing-app:start",
-		"pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\""
+		"pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\"",
+		"qwik-speak": "nx run testing-app:qwik-speak-extract"
 	},
 	"devDependencies": {
 		"@nx/eslint": "19.8.14",
@@ -23,6 +24,7 @@
 		"nx": "19.8.14",
 		"prettier": "3.2.5",
 		"qwik-nx": "2.3.1",
+		"qwik-speak": "0.23.0",
 		"typescript": "5.4.5",
 		"vite": "5.2.1",
 		"vite-plugin-dts": "3.9.1",

@@ -1,3 +1,4 @@
+/// <reference lib="webworker" />
 /*
  * WHAT IS THIS FILE?
  *

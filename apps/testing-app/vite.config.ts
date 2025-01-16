@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite';
-import { join } from 'path';
+// import { join } from 'path';
 import { qwikNxVite } from 'qwik-nx/plugins';
 import { qwikRouter } from '@qwik.dev/router/vite';
-// import { qwikSpeakInline } from 'qwik-speak/inline';
+import { qwikSpeakInline } from 'qwik-speak/inline';
 import { qwikVite } from '@qwik.dev/core/optimizer';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
@@ -21,12 +21,12 @@ export default defineConfig({
       tsconfigFileNames: ['tsconfig.json'],
     }),
     tsconfigPaths({ root: '../../' }),
-    // qwikSpeakInline({
-    //   basePath: './',
-    //   assetsPath: 'apps/oozmi-website/i18n',
-    //   supportedLangs: ['sr', 'en'],
-    //   defaultLang: 'sr',
-    // }),
+    qwikSpeakInline({
+      basePath: './',
+      assetsPath: 'apps/testing-app/i18n',
+      supportedLangs: ['sr', 'en'],
+      defaultLang: 'sr',
+    }),
     // partytownVite({
     //   dest: join(__dirname, '../../dist/apps/oozmi-website/dist', '~partytown'),
     // }),

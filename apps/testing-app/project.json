@@ -19,6 +19,13 @@
 				"configFile": "apps/testing-app/vite.config.ts",
 				"skipTypeCheck": true
 			}
+		},
+		"qwik-speak-extract": {
+			"executor": "nx:run-commands",
+			"options": {
+				"command": "bash ../../scripts/get-project-dependencies/qwik-speak-extract.sh testing-app",
+				"cwd": "apps/testing-app"
+			}
 		}
 	},
 	"tags": []

@@ -6,6 +6,9 @@
 	"references": [
 		{
 			"path": "../../libs/app-specific/testing-app/feature-homepage"
+		},
+		{
+			"path": "../../libs/shared/util-multilingual/"
 		}
 	],
 	"include": ["**/*.ts", "**/*.tsx"]

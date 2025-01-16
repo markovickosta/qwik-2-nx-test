@@ -23,6 +23,9 @@
 		"paths": {
 			"@qwik-2-nx-test-workspace/homepage": [
 				"libs/app-specific/testing-app/feature-homepage/src/index.ts"
+			],
+			"@qwik-2-nx-test-workspace/util-multilingual": [
+				"libs/shared/util-multilingual/src/index.ts"
 			]
 		}
 	},

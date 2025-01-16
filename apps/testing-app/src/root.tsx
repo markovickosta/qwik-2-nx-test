@@ -1,13 +1,17 @@
-import { component$ } from '@qwik.dev/core';
+import './global.css';
+
 import {
 	QwikRouterProvider,
 	RouterOutlet,
 	ServiceWorkerRegister,
 } from '@qwik.dev/router';
-import { RouterHead } from './components/router-head/router-head';
-import { isDev } from '@qwik.dev/core';
 
-import './global.css';
+import { RouterHead } from './components/router-head/router-head';
+import { component$ } from '@qwik.dev/core';
+import { config } from './integrations/qwik-speak/speak-config';
+import { isDev } from '@qwik.dev/core';
+import { translationFn } from '@qwik-2-nx-test-workspace/util-multilingual';
+import { useQwikSpeak } from 'qwik-speak';
 
 export default component$(() => {
 	/**
@@ -16,6 +20,7 @@ export default component$(() => {
 	 *
 	 * Don't remove the `<head>` and `<body>` elements.
 	 */
+	useQwikSpeak({ config, translationFn });
 
 	return (
 		<QwikRouterProvider>

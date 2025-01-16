@@ -1,5 +1,7 @@
-import { component$, Slot } from '@qwik.dev/core';
+import { Slot, component$ } from '@qwik.dev/core';
+
 import type { RequestHandler } from '@qwik.dev/router';
+import { useSpeak } from 'qwik-speak';
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
 	// Control caching for this request for best performance and to reduce hosting costs:
@@ -13,5 +15,9 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 };
 
 export default component$(() => {
+	useSpeak({
+		assets: ['home'],
+	});
+
 	return <Slot />;
 });
