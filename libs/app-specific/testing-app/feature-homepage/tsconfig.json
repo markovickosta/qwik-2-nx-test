@@ -1,8 +1,8 @@
 {
-  "extends": "../../../../tsconfig.settings.json",
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "compilerOptions": {
-    "outDir": "./dist"
-  },
-  "references": []
+	"extends": "../../../../tsconfig.settings.json",
+	"include": ["src/**/*.ts", "src/**/*.tsx"],
+	"compilerOptions": {
+		"outDir": "./dist"
+	},
+	"references": []
 }

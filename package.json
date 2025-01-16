@@ -1,40 +1,41 @@
 {
-  "name": "qwik-2-nx-test",
-  "private": true,
-  "description": "Blank project with routing included",
-  "type": "module",
-  "scripts": {
-    "start": "nx run testing-app:start"
-  },
-  "devDependencies": {
-    "@nx/eslint": "19.8.14",
-    "@nx/vite": "19.8.14",
-    "@nx/web": "19.8.14",
-    "@qwik.dev/core": "2.0.0-alpha.5",
-    "@qwik.dev/router": "2.0.0-alpha.5",
-    "@types/eslint": "8.56.10",
-    "@types/node": "20.12.12",
-    "@typescript-eslint/eslint-plugin": "7.10.0",
-    "@typescript-eslint/parser": "7.10.0",
-    "@vitest/ui": "2.1.8",
-    "eslint": "8.57.0",
-    "eslint-plugin-qwik": "2.0.0-alpha.5",
-    "nx": "19.8.14",
-    "prettier": "3.2.5",
-    "qwik-nx": "2.3.1",
-    "typescript": "5.4.5",
-    "vite": "5.2.1",
-    "vite-plugin-dts": "3.9.1",
-    "vite-tsconfig-paths": "4.3.2",
-    "vitest": "2.1.8"
-  },
-  "engines": {
-    "node": "^20.3.0 || >=21.0.0"
-  },
-  "engines-annotation": "Mostly required by sharp which needs a Node-API v9 compatible runtime",
-  "nx": {},
-  "trustedDependencies": [
-    "sharp"
-  ],
-  "trustedDependencies-annotation": "Needed for bun to allow running install scripts"
+	"name": "qwik-2-nx-test",
+	"private": true,
+	"description": "Blank project with routing included",
+	"type": "module",
+	"scripts": {
+		"start": "nx run testing-app:start",
+		"pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\""
+	},
+	"devDependencies": {
+		"@nx/eslint": "19.8.14",
+		"@nx/vite": "19.8.14",
+		"@nx/web": "19.8.14",
+		"@qwik.dev/core": "2.0.0-alpha.5",
+		"@qwik.dev/router": "2.0.0-alpha.5",
+		"@types/eslint": "8.56.10",
+		"@types/node": "20.12.12",
+		"@typescript-eslint/eslint-plugin": "7.10.0",
+		"@typescript-eslint/parser": "7.10.0",
+		"@vitest/ui": "2.1.8",
+		"eslint": "8.57.0",
+		"eslint-plugin-qwik": "2.0.0-alpha.5",
+		"nx": "19.8.14",
+		"prettier": "3.2.5",
+		"qwik-nx": "2.3.1",
+		"typescript": "5.4.5",
+		"vite": "5.2.1",
+		"vite-plugin-dts": "3.9.1",
+		"vite-tsconfig-paths": "4.3.2",
+		"vitest": "2.1.8"
+	},
+	"engines": {
+		"node": "^20.3.0 || >=21.0.0"
+	},
+	"engines-annotation": "Mostly required by sharp which needs a Node-API v9 compatible runtime",
+	"nx": {},
+	"trustedDependencies": [
+		"sharp"
+	],
+	"trustedDependencies-annotation": "Needed for bun to allow running install scripts"
 }

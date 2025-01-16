@@ -1,12 +1,12 @@
 {
-  "extends": "../../tsconfig.settings.json",
-  "compilerOptions": {
-    "outDir": "./dist"
-  },
-  "references": [
-    {
-      "path": "../../libs/app-specific/testing-app/feature-homepage"
-    }
-  ],
-  "include": ["**/*.ts", "**/*.tsx"]
+	"extends": "../../tsconfig.settings.json",
+	"compilerOptions": {
+		"outDir": "./dist"
+	},
+	"references": [
+		{
+			"path": "../../libs/app-specific/testing-app/feature-homepage"
+		}
+	],
+	"include": ["**/*.ts", "**/*.tsx"]
 }
