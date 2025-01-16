@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "@qwik.dev/core",
+    "lib": ["es2018", "dom"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noEmitHelpers": true,
+    "pretty": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2018",
+    "typeRoots": ["node_modules/@types", "node_modules"],
+    "types": ["vite/client", "vitest", "node"],
+    "paths": {
+      "@qwik-2-nx-test-workspace/homepage": [
+        "libs/app-specific/testing-app/feature-homepage/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp", "dist", ".vscode", ".nx", ".git"]
+}

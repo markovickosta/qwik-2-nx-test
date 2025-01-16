@@ -1,21 +1,17 @@
-import { component$ } from "@qwik.dev/core";
-import { type DocumentHead } from "@qwik.dev/router";
+import { Homepage } from '@qwik-2-nx-test-workspace/homepage';
+import { component$ } from '@qwik.dev/core';
+import { type DocumentHead } from '@qwik.dev/router';
 
 export default component$(() => {
-  return (
-    <>
-      <h1>Hi 👋</h1>
-      {/* <Homepage></Homepage> */}
-    </>
-  );
+  return <Homepage />;
 });
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+  title: 'Welcome to Qwik',
   meta: [
     {
-      name: "description",
-      content: "Qwik site description",
+      name: 'description',
+      content: 'Qwik site description',
     },
   ],
 };
