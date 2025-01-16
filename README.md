@@ -6,6 +6,7 @@
 -   Qwik Speak
 -   Partytown
 -   Nx
+-   Tailwind CSS
 
 ## Run
 

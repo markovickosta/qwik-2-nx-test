@@ -5,6 +5,7 @@ import {
 	RouterOutlet,
 	ServiceWorkerRegister,
 } from '@qwik.dev/router';
+import { useQwikSpeak, useSpeakLocale } from 'qwik-speak';
 
 import { QwikPartytown } from './partytown';
 import { RouterHead } from './components/router-head/router-head';
@@ -12,7 +13,6 @@ import { component$ } from '@qwik.dev/core';
 import { config } from './integrations/qwik-speak/speak-config';
 import { isDev } from '@qwik.dev/core';
 import { translationFn } from '@qwik-2-test-workspace/util-multilingual';
-import { useQwikSpeak } from 'qwik-speak';
 
 export default component$(() => {
 	/**
@@ -22,6 +22,7 @@ export default component$(() => {
 	 * Don't remove the `<head>` and `<body>` elements.
 	 */
 	useQwikSpeak({ config, translationFn });
+	const lang = useSpeakLocale();
 
 	return (
 		<QwikRouterProvider>
@@ -36,7 +37,7 @@ export default component$(() => {
 				<QwikPartytown forward={['dataLayer.push']} />
 				<RouterHead />
 			</head>
-			<body lang="en">
+			<body lang={lang.lang}>
 				<RouterOutlet />
 				{!isDev && <ServiceWorkerRegister />}
 			</body>
