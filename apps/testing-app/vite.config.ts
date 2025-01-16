@@ -7,16 +7,16 @@ import { qwikVite } from '@qwik.dev/core/optimizer';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
-  cacheDir: '../../node_modules/.vite/apps/oozmi-website',
+  cacheDir: '../../node_modules/.vite/apps/testing-app',
   plugins: [
     qwikNxVite(),
     qwikRouter(),
     qwikVite({
       client: {
-        outDir: '../../dist/apps/oozmi-website/dist',
+        outDir: '../../dist/apps/testing-app/dist',
       },
       ssr: {
-        outDir: '../../dist/apps/oozmi-website/server',
+        outDir: '../../dist/apps/testing-app/server',
       },
       tsconfigFileNames: ['tsconfig.json'],
     }),
@@ -28,7 +28,7 @@ export default defineConfig({
       defaultLang: 'sr',
     }),
     // partytownVite({
-    //   dest: join(__dirname, '../../dist/apps/oozmi-website/dist', '~partytown'),
+    //   dest: join(__dirname, '../../dist/apps/testing-app/dist', '~partytown'),
     // }),
   ],
   server: {

@@ -10,8 +10,8 @@ export const onGet: RequestHandler = ({ params, locale, html, redirect }) => {
 		allowedLangs,
 		config,
 		import.meta.env.DEV
-			? `dist/apps/oozmi-website/dist/`
-			: `../../dist/apps/oozmi-website/dist/`,
+			? `dist/apps/testing-app/dist/`
+			: `../../dist/apps/testing-app/dist/`,
 		params,
 		locale,
 		html,
