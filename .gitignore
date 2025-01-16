@@ -40,3 +40,8 @@ lerna-debug.log*
 # Yarn
 .yarn/*
 !.yarn/releases
+
+# New
+.nx
+vite.config.*.timestamp*
+vitest.config.*.timestamp*

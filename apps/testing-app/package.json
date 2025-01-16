@@ -1,0 +1,8 @@
+{
+  "name": "testing-app",
+  "scripts": {
+    "serve": "node server/entry.express",
+    "qwik": "qwik"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,25 @@
+{
+  "name": "testing-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/testing-app/src",
+  "targets": {
+    "start": {
+      "executor": "@nx/vite:dev-server",
+      "options": {
+        "buildTarget": "testing-app:build.client",
+        "mode": "ssr",
+        "port": 5173
+      }
+    },
+    "build.client": {
+      "executor": "@nx/vite:build",
+      "options": {
+        "outputPath": "dist/apps/testing-app",
+        "configFile": "apps/testing-app/vite.config.ts",
+        "skipTypeCheck": true
+      }
+    }
+  },
+  "tags": []
+}
