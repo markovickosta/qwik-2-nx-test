@@ -1,5 +1,5 @@
 {
-	"name": "@qwik-2-nx-test-workspace/util-multilingual",
+	"name": "@qwik-2-test-workspace/util-multilingual",
 	"version": "0.0.1",
 	"dependencies": {
 		"tslib": "^2.3.0"

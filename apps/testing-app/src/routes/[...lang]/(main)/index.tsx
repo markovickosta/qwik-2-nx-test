@@ -1,4 +1,4 @@
-import { Homepage } from '@qwik-2-nx-test-workspace/homepage';
+import { Homepage } from '@qwik-2-test-workspace/homepage';
 import { component$ } from '@qwik.dev/core';
 import { type DocumentHead } from '@qwik.dev/router';
 

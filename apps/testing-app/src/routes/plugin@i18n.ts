@@ -1,7 +1,7 @@
 import type { RequestHandler } from '@qwik.dev/router';
 import { config } from '../integrations/qwik-speak/speak-config';
 import fs from 'fs';
-import { pluginLogic } from '@qwik-2-nx-test-workspace/util-multilingual';
+import { pluginLogic } from '@qwik-2-test-workspace/util-multilingual';
 
 const allowedLangs = ['', 'en', 'sr'];
 

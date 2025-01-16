@@ -1,5 +1,5 @@
 {
-	"name": "@qwik-2-nx-test-workspace/feature-homepage",
+	"name": "@qwik-2-test-workspace/feature-homepage",
 	"version": "0.0.1",
 	"type": "commonjs",
 	"main": "out-tsc/index.js",

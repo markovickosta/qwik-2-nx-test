@@ -1,7 +1,7 @@
 {
-	"name": "qwik-2-nx-test",
+	"name": "qwik-2-test",
 	"private": true,
-	"description": "Blank project with routing included",
+	"description": "Qwik 2 monorepo with routing, i18n, and partytown",
 	"type": "module",
 	"scripts": {
 		"start": "nx run testing-app:start",

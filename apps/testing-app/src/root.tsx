@@ -11,7 +11,7 @@ import { RouterHead } from './components/router-head/router-head';
 import { component$ } from '@qwik.dev/core';
 import { config } from './integrations/qwik-speak/speak-config';
 import { isDev } from '@qwik.dev/core';
-import { translationFn } from '@qwik-2-nx-test-workspace/util-multilingual';
+import { translationFn } from '@qwik-2-test-workspace/util-multilingual';
 import { useQwikSpeak } from 'qwik-speak';
 
 export default component$(() => {
